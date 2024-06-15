@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DTPCKase</string>
+    <string name="intro_title">Encuentra tu Estilo!<font color="#6033ba">\n Un mundo de skins</font> </string>
+    <string name="intro_text">Personaliza toda tu Setup\nY Sé Único</string>
+    <string name="intro_signin">Ya tienes una cuenta? <font color="#6033ba">Inicia Sesión</font></string>
+    <string name="button_play">Play</string>
+    <string name="sign_slogan">Tu Pc,Tu Estilo</string>
+    <string name="sign_registrate">Regístrate Aquí</string>
+    <string name="slogan_main">Explora la mejor selección de skins</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
