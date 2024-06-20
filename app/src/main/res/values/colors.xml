@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
+    <color name="button_cart">#27CA03</color>
     <color name="white">#FFFFFFFF</color>
     <color name="pink">#9E0264</color>
     <color name="grey">#919191</color>
     <color name="darkgrey">#616161</color>
     <color name="lightGrey">#E0E0E0</color>
+    <color name="textColor">#1FC57A</color>
+    <color name="startColor">#53E88B</color>
+    <color name="endColor">#15BE77</color>
 </resources>
