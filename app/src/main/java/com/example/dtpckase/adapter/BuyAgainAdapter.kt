@@ -7,7 +7,8 @@ import com.example.dtpckase.databinding.BuyAgainItemBinding
 
 class BuyAgainAdapter(private val buyAgainProductName:ArrayList<String>,
                       private val buyAgainProductPrice:ArrayList<String>,
-                      private val buyAgainProductImage:ArrayList<Int>) : RecyclerView.Adapter<BuyAgainAdapter.BuyAgainViewHolder>() {
+                      private val buyAgainProductImage:ArrayList<Int>) : RecyclerView
+                          .Adapter<BuyAgainAdapter.BuyAgainViewHolder>() {
 
     override fun onBindViewHolder(holder: BuyAgainViewHolder, position: Int) {
     holder.bind(buyAgainProductName[position],buyAgainProductPrice[position],buyAgainProductImage[position])

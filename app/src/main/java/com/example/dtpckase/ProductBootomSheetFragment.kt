@@ -43,7 +43,8 @@ class ProductBootomSheetFragment : BottomSheetDialogFragment() {
         val adapter = MenuAdapter(
             ArrayList(menuProductName),
             ArrayList(menuItemPrice),
-            ArrayList(menuImage)
+            ArrayList(menuImage),requireContext()
+
         )
         binding.productRecyclerView.layoutManager = LinearLayoutManager(requireContext())
         binding.productRecyclerView.adapter = adapter

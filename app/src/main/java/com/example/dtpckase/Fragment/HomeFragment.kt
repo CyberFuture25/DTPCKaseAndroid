@@ -65,7 +65,7 @@ class HomeFragment : Fragment() {
         val Price = listOf("S/.100.00","S/.80.00","S/.120.00","S/.250.00")
         val popularProductImages =
             listOf(R.drawable.mousepad1,R.drawable.mousepad2,R.drawable.sss,R.drawable.aasas)
-    val adapter = PopularAdapter(ProductNamePopular,Price,popularProductImages)
+    val adapter = PopularAdapter(ProductNamePopular,Price,popularProductImages,requireContext())
         binding.PopulerRecyclerView.layoutManager = LinearLayoutManager(requireContext())
         binding.PopulerRecyclerView.adapter = adapter
     }

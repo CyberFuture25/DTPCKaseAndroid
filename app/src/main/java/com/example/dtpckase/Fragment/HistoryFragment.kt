@@ -24,6 +24,7 @@ class HistoryFragment : Fragment() {
     ): View? {
         binding = FragmentHistoryBinding.inflate(layoutInflater, container, false)
         // Inflate the layout for this fragment
+        setupRecyclerView()
         return binding.root
     }
     private fun setupRecyclerView(){

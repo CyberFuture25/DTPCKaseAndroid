@@ -1,11 +1,14 @@
 package com.example.dtpckase.Fragment
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.dtpckase.CongratsBottomSheet
+import com.example.dtpckase.PayOutActivity
 import com.example.dtpckase.R
 import com.example.dtpckase.adapter.CartAdapter
 import com.example.dtpckase.databinding.FragmentCartBinding
@@ -39,6 +42,12 @@ class CartFragment : Fragment() {
         val adapter = CartAdapter(ArrayList(cartProductName),ArrayList(cartItemPrice),ArrayList(cartImage))
         binding.cartRecyclerView.layoutManager = LinearLayoutManager(requireContext())
         binding.cartRecyclerView.adapter = adapter
+        binding.proceedButton.setOnClickListener {
+            val intent = Intent(requireContext(), PayOutActivity::class.java)
+             startActivity(intent)
+        }
+
+
         return binding.root
     }
 

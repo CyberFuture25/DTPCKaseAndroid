@@ -7,6 +7,8 @@
     <string name="sign_slogan">Tu Pc,Tu Estilo</string>
     <string name="sign_registrate">Regístrate Aquí</string>
     <string name="slogan_main">Explora la mejor selección de skins</string>
+    <string name="direccion_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies malesuada vulputate. Integer imperdiet, ex vel ullamcorper auctor, augue enim hendrerit sapien, nec porttitor sapien purus gravida odio. Sed consectetur erat sed neque porttitor, vel scelerisque elit sollicitudin. Duis scelerisque, mi ac molestie pellentesque, ante mauris posuere mauris, at molestie nisl tellus quis risus.</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
