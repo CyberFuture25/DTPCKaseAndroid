@@ -54,7 +54,7 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     implementation ("com.github.denzcoskun:ImageSlideshow:0.1.2")
-
+    implementation(kotlin("script-runtime"))
 
 
 }
