@@ -7,7 +7,7 @@
     android:layout_gravity="center_vertical"
 
     android:background="@color/white"
-    tools:context=".ProductBootomSheetFragment">
+    tools:context="com.examples.dtpckase.ProductBootomSheetFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <ImageButton

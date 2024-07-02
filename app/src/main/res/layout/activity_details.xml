@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailsActivity">
+    android:backgroundTint="#000000"
+    tools:context="com.examples.dtpckase.DetailsActivity">
 
     <ImageView
         android:id="@+id/imageButton"
@@ -38,16 +39,18 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
+        android:background="#000000"
+        android:backgroundTint="#000000"
         app:cardCornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/detailProductName">
 
         <ImageView
-            android:id="@+id/DetailProductImage"
+            android:id="@+id/detailProductImage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:scaleType="centerCrop"
+            android:scaleType="fitCenter"
             tools:srcCompat="@tools:sample/backgrounds/scenic" />
     </androidx.cardview.widget.CardView>
 
@@ -55,45 +58,46 @@
         android:id="@+id/TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="15dp"
         android:fontFamily="sans-serif-smallcaps"
         android:text="Descripcion"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView4" />
+        app:layout_constraintTop_toBottomOf="@+id/detailCategory" />
 
     <TextView
-        android:id="@+id/DescriptionTextView"
+        android:id="@+id/detailDescription"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
         android:text="Quisque efficitur vel ante fermentum tristique. In ipsum nunc, commodo eu convallis ut, sagittis id nisl. Nullam ut quam mi. Suspendisse sed mi ac purus volutpat tempor in eu tellus. Duis pharetra porttitor ultrices"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/TextView"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TextView" />
 
     <TextView
         android:id="@+id/textView30"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="sans-serif-smallcaps"
-        android:text="TextView"
+        android:text="Categoría"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/DescriptionTextView"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/DescriptionTextView"
-        app:layout_constraintTop_toBottomOf="@+id/DescriptionTextView" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView4" />
 
     <TextView
-        android:id="@+id/textView31"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/detailCategory"
+        android:layout_width="55dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="5dp"
         android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/textView30"
+        app:layout_constraintHorizontal_bias="0.592"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView30" />
 
@@ -102,13 +106,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/addtocartshape"
         android:text="Agregar al Carro"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+        app:layout_constraintTop_toBottomOf="@+id/detailDescription" />
 </androidx.constraintlayout.widget.ConstraintLayout>

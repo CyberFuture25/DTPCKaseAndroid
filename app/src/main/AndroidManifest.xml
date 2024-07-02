@@ -13,39 +13,37 @@
         android:theme="@style/Theme.DTPCKase"
         tools:targetApi="31">
         <activity
-            android:name=".DetailsActivity"
+            android:name="com.examples.dtpckase.DetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".PayOutActivity"
+            android:name="com.examples.dtpckase.PayOutActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.examples.dtpckase.ChooseLocationActivity"
             android:exported="false" />
         <activity
-            android:name=".PayOutActivity2"
+            android:name="com.examples.dtpckase.SignActivity"
             android:exported="false" />
         <activity
-            android:name=".ChooseLocationActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SignActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".StartActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Splash_Screen"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:windowSoftInputMode="adjustPan">
+            android:name="com.examples.dtpckase.LoginActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.examples.dtpckase.StartActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.examples.dtpckase.Splash_Screen"
+            android:exported="false" />
+        <activity
+            android:name="com.examples.dtpckase.MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan"/>
     </application>
 
 </manifest>
